@@ -18,6 +18,7 @@
 
 NAME = cph
 CC ?= gcc
+CFLAGS = -Wall -W -Wextra -std=gnu99
 CPPFLAGS =
 LDFLAGS =
 
