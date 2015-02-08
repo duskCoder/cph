@@ -33,7 +33,7 @@ DEP = $(SRC:.c=.d)
 -include $(DEP)
 
 %.d: %.c
-	$(CC) -MM $(CPPFLAGS) $< -MF $@ -MT "$*.o $@"
+	$(CC) -MM $(CFLAGS) $(CPPFLAGS) $< -MF $@ -MT "$*.o $@"
 
 clean:
 	$(RM) $(OBJ)
